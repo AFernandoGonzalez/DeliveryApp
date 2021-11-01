@@ -21,14 +21,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return ApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
     }
     
-//    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
-//        return FBSDKApplicationDelegate.sharedInstance().application?(
-//            app,
-//            open: url,
-//            sourceApplication: options[UIApplicationOpenURLOptionKey.sourceApplication],
-//            annotation: nil))
-//    }
-//    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        return ApplicationDelegate.shared.application(
+            app,
+            open: url,
+            sourceApplication: options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String,
+            annotation: nil)
+    }
+//
     
     
     

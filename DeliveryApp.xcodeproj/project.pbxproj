@@ -17,6 +17,7 @@
 		1079F3B02730930F00B4AEF5 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1079F3AF2730930F00B4AEF5 /* OrderViewController.swift */; };
 		1079F3B2273095EB00B4AEF5 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1079F3B1273095EB00B4AEF5 /* ProfileViewController.swift */; };
 		1079F3B427309A0D00B4AEF5 /* FBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1079F3B327309A0D00B4AEF5 /* FBManager.swift */; };
+		1079F3B72730A55400B4AEF5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1079F3B62730A55400B4AEF5 /* LoginViewController.swift */; };
 		10A864BC272C889900384407 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A864BB272C889900384407 /* AppDelegate.swift */; };
 		10A864BE272C889900384407 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A864BD272C889900384407 /* SceneDelegate.swift */; };
 		10A864C0272C889900384407 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A864BF272C889900384407 /* ViewController.swift */; };
@@ -40,6 +41,7 @@
 		1079F3AF2730930F00B4AEF5 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 		1079F3B1273095EB00B4AEF5 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		1079F3B327309A0D00B4AEF5 /* FBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBManager.swift; sourceTree = "<group>"; };
+		1079F3B62730A55400B4AEF5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		10A864B8272C889900384407 /* DeliveryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeliveryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10A864BB272C889900384407 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10A864BD272C889900384407 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				1079F3AB27308F7E00B4AEF5 /* PaymentViewController.swift */,
 				1079F3AF2730930F00B4AEF5 /* OrderViewController.swift */,
 				1079F3B1273095EB00B4AEF5 /* ProfileViewController.swift */,
+				1079F3B62730A55400B4AEF5 /* LoginViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				10A864BC272C889900384407 /* AppDelegate.swift in Sources */,
 				1079F3B427309A0D00B4AEF5 /* FBManager.swift in Sources */,
 				1079F3A427305F9700B4AEF5 /* MealDetailsViewController.swift in Sources */,
+				1079F3B72730A55400B4AEF5 /* LoginViewController.swift in Sources */,
 				1079F3A82730884B00B4AEF5 /* CartViewController.swift in Sources */,
 				1079F3AE273092EF00B4AEF5 /* OrderCell.swift in Sources */,
 				10A864BE272C889900384407 /* SceneDelegate.swift in Sources */,
