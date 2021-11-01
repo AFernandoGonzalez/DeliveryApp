@@ -60,7 +60,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <segue destination="rTm-Q2-sRh" kind="showDetail" identifier="CustomerView" id="omP-mY-tuD"/>
+                        <segue destination="rTm-Q2-sRh" kind="show" identifier="CustomerView" id="omP-mY-tuD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
