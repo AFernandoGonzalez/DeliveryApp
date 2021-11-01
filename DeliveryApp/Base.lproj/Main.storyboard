@@ -14,7 +14,7 @@
             <objects>
                 <viewController title="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="DeliveryApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A2n-5O-Jwr">
@@ -59,6 +59,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="kfx-xb-n9f"/>
                     <connections>
                         <segue destination="rTm-Q2-sRh" kind="show" identifier="CustomerView" id="omP-mY-tuD"/>
                     </connections>
@@ -656,7 +657,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="Kl7-bS-SbH">
-                        <barButtonItem key="rightBarButtonItem" title="Logout" id="nMh-qz-XtA"/>
+                        <barButtonItem key="rightBarButtonItem" title="Logout" id="nMh-qz-XtA">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="show" identifier="CustomerLogout" id="gJd-eI-qYG"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sT4-jA-4tu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

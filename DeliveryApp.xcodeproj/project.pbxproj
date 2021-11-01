@@ -18,6 +18,7 @@
 		1079F3B2273095EB00B4AEF5 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1079F3B1273095EB00B4AEF5 /* ProfileViewController.swift */; };
 		1079F3B427309A0D00B4AEF5 /* FBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1079F3B327309A0D00B4AEF5 /* FBManager.swift */; };
 		1079F3B72730A55400B4AEF5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1079F3B62730A55400B4AEF5 /* LoginViewController.swift */; };
+		1079F3BA2730AEF200B4AEF5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1079F3B92730AEF200B4AEF5 /* User.swift */; };
 		10A864BC272C889900384407 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A864BB272C889900384407 /* AppDelegate.swift */; };
 		10A864BE272C889900384407 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A864BD272C889900384407 /* SceneDelegate.swift */; };
 		10A864C0272C889900384407 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A864BF272C889900384407 /* ViewController.swift */; };
@@ -42,6 +43,7 @@
 		1079F3B1273095EB00B4AEF5 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		1079F3B327309A0D00B4AEF5 /* FBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBManager.swift; sourceTree = "<group>"; };
 		1079F3B62730A55400B4AEF5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1079F3B92730AEF200B4AEF5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		10A864B8272C889900384407 /* DeliveryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeliveryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10A864BB272C889900384407 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10A864BD272C889900384407 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +81,14 @@
 			path = Manager;
 			sourceTree = "<group>";
 		};
+		1079F3B82730AEDE00B4AEF5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1079F3B92730AEF200B4AEF5 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		10A864AF272C889900384407 = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +110,7 @@
 		10A864BA272C889900384407 /* DeliveryApp */ = {
 			isa = PBXGroup;
 			children = (
+				1079F3B82730AEDE00B4AEF5 /* Models */,
 				1079F3B527309A1C00B4AEF5 /* Manager */,
 				10A864D2272C972D00384407 /* Cells */,
 				10A864CF272C90BF00384407 /* Controllers */,
@@ -280,6 +291,7 @@
 				1079F3B2273095EB00B4AEF5 /* ProfileViewController.swift in Sources */,
 				10A864C0272C889900384407 /* ViewController.swift in Sources */,
 				1079F3A227304CEF00B4AEF5 /* MealCell.swift in Sources */,
+				1079F3BA2730AEF200B4AEF5 /* User.swift in Sources */,
 				10A864D1272C90DB00384407 /* RestaurantsViewController.swift in Sources */,
 				1079F3AC27308F7E00B4AEF5 /* PaymentViewController.swift in Sources */,
 				10A864BC272C889900384407 /* AppDelegate.swift in Sources */,

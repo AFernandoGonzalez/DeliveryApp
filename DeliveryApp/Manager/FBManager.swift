@@ -22,6 +22,10 @@ class FBManager {
                     let json = JSON(result!)
                     print(json)
                     
+                    //User data info
+                    User.currenUser.setInfo(json: json)
+                    
+                    
                     //
                     compleationHandler()
                 }

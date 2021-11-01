@@ -47,6 +47,7 @@ class LoginViewController: UIViewController {
                         FBManager.getFBUserData (compleationHandler: {
                         
                             self.fbloginSuccess = true
+                            self.viewDidAppear(true)
                         })
                         
                         
