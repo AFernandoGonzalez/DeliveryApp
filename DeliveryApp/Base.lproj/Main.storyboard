@@ -12,15 +12,17 @@
         <!--LoginViewController-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="DeliveryApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="LoginViewController" modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="LoginViewController" customModule="DeliveryApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A2n-5O-Jwr">
-                                <rect key="frame" x="93" y="649" width="229" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A2n-5O-Jwr">
+                                <rect key="frame" x="10" y="665" width="394" height="31"/>
                                 <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="V2q-qb-2aD"/>
+                                </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Login with Facebook">
@@ -30,37 +32,52 @@
                                     <action selector="facebookLoginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZDm-B2-KEC"/>
                                 </connections>
                             </button>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="9lV-Yq-fCO">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="9lV-Yq-fCO">
                                 <rect key="frame" x="93" y="503" width="214" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Customer"/>
                                     <segment title="Driver"/>
                                 </segments>
                             </segmentedControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DeliveryApp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pWL-5W-M2x">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DeliveryApp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pWL-5W-M2x">
                                 <rect key="frame" x="109" y="178" width="182" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sv1-f1-UYt">
-                                <rect key="frame" x="93" y="706" width="229" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sv1-f1-UYt">
+                                <rect key="frame" x="10" y="706" width="394" height="37"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Use Different Account">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="19"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="facebookLogoutButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SuW-M1-uzS"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9lV-Yq-fCO" firstAttribute="centerX" secondItem="pWL-5W-M2x" secondAttribute="centerX" id="0Eb-Gw-zuK"/>
+                            <constraint firstItem="pWL-5W-M2x" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="109" id="17j-6H-U2G"/>
+                            <constraint firstItem="A2n-5O-Jwr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="3EH-ku-Sl9"/>
+                            <constraint firstAttribute="bottom" secondItem="9lV-Yq-fCO" secondAttribute="bottom" constant="362" id="DRk-vu-Ny8"/>
+                            <constraint firstItem="sv1-f1-UYt" firstAttribute="top" secondItem="A2n-5O-Jwr" secondAttribute="bottom" constant="10" id="Lne-XK-GnK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sv1-f1-UYt" secondAttribute="trailing" constant="10" id="YNG-yy-orG"/>
+                            <constraint firstItem="sv1-f1-UYt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="c5n-Ff-wQ0"/>
+                            <constraint firstItem="pWL-5W-M2x" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="134" id="igo-88-6he"/>
+                            <constraint firstItem="9lV-Yq-fCO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="93" id="pRY-T9-ZI9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="A2n-5O-Jwr" secondAttribute="trailing" constant="10" id="twt-4J-KGh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sv1-f1-UYt" secondAttribute="bottom" constant="119" id="wdP-63-L2w"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="kfx-xb-n9f"/>
                     <connections>
+                        <outlet property="loginFBButton" destination="A2n-5O-Jwr" id="hoX-6d-IJ1"/>
+                        <outlet property="logoutFBButton" destination="sv1-f1-UYt" id="WHw-bu-cMf"/>
                         <segue destination="rTm-Q2-sRh" kind="show" identifier="CustomerView" id="omP-mY-tuD"/>
                     </connections>
                 </viewController>
@@ -659,7 +676,7 @@
                     <navigationItem key="navigationItem" id="Kl7-bS-SbH">
                         <barButtonItem key="rightBarButtonItem" title="Logout" id="nMh-qz-XtA">
                             <connections>
-                                <segue destination="BYZ-38-t0r" kind="show" identifier="CustomerLogout" id="gJd-eI-qYG"/>
+                                <segue destination="BYZ-38-t0r" kind="showDetail" identifier="CustomerLogout" id="gJd-eI-qYG"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

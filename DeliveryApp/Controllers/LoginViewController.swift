@@ -10,7 +10,9 @@ import FBSDKLoginKit
 
 class LoginViewController: UIViewController {
     
+    @IBOutlet weak var loginFBButton: UIButton!
     
+    @IBOutlet weak var logoutFBButton: UIButton!
     
     //
     var fbloginSuccess = false
@@ -18,8 +20,16 @@ class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
+        //
+        if AccessToken.current != nil {
+            logoutFBButton.isHidden = false
+            FBManager.getFBUserData(compleationHandler: {
+                self.loginFBButton.setTitle("Continue as \(User.currenUser.email!)", for: .normal)
+                //self.loginFBButton.sizeToFit()
+            } )
+        }
+        //
     }
     
     
@@ -28,6 +38,23 @@ class LoginViewController: UIViewController {
             performSegue(withIdentifier: "CustomerView", sender: self)
         }
     }
+    
+    
+    //
+    
+    @IBAction func facebookLogoutButton(_ sender: Any) {
+        
+        FBManager.shared.logOut()
+        User.currenUser.resetInfo()
+        
+        loginFBButton.isHidden = true
+        loginFBButton.setTitle("Login with Facebook", for: .normal)
+    }
+    
+    
+    
+    
+    //
     
 
     @IBAction func facebookLoginButton(_ sender: Any) {
@@ -57,6 +84,9 @@ class LoginViewController: UIViewController {
         }
     }
     
+    
+    
+   
     
     
     
