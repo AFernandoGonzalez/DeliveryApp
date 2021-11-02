@@ -48,7 +48,8 @@ class LoginViewController: UIViewController {
         User.currenUser.resetInfo()
         
         loginFBButton.isHidden = true
-        loginFBButton.setTitle("Login with Facebook", for: .normal)
+        loginFBButton.setTitle(title, for: .normal)
+        //loginFBButton.setTitle("Login with Facebook", for: .normal)
     }
     
     
