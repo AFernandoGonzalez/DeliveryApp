@@ -24,13 +24,12 @@ class FBManager {
                     
                     //User data info
                     User.currenUser.setInfo(json: json)
-                    
-                    
                     //
                     compleationHandler()
                 }
             }
         }
     }
+    
     
 }

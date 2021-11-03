@@ -12,19 +12,19 @@ class RestaurantsViewController: UIViewController, UITableViewDelegate, UITableV
    
     @IBOutlet weak var tableView: UITableView!
     
-    
     //Variable availble in the lifetime of the screen
     var restaurants = [[String:Any]]()
+    
+
+    //search results
+    //var filteredRestaurants = [restaurants]
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        
         tableView.dataSource = self
         tableView.delegate = self
-        
         
         // start calling api
         let url = URL(string: "https://fooddeliverynowapp.herokuapp.com/api/customer/restaurants/")!
@@ -38,24 +38,16 @@ class RestaurantsViewController: UIViewController, UITableViewDelegate, UITableV
                  let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String:Any]
                  
                  self.restaurants = dataDictionary["restaurants"] as! [[String:Any]]
-                 
                  self.tableView.reloadData()
-                 
-                 
                  //download is complete : reload table view data
                  self.tableView.reloadData()
-                 
                  print(dataDictionary)
-
-                    // TODO: Get the array of movies
-                    // TODO: Store the movies in a property to use elsewhere
-                    // TODO: Reload your table view data
-
              }
         }
         task.resume()
 
-        
+      
+        //end of function
     }
     
     
