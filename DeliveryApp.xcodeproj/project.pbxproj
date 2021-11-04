@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10319B862733172000C6756E /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10319B852733172000C6756E /* Meal.swift */; };
 		103291492731DEE2005EB62B /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103291482731DEE2005EB62B /* APIManager.swift */; };
 		1032914B2731E276005EB62B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1032914A2731E276005EB62B /* Constants.swift */; };
 		1079F3A227304CEF00B4AEF5 /* MealCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1079F3A127304CEF00B4AEF5 /* MealCell.swift */; };
@@ -21,6 +22,7 @@
 		1079F3B427309A0D00B4AEF5 /* FBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1079F3B327309A0D00B4AEF5 /* FBManager.swift */; };
 		1079F3B72730A55400B4AEF5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1079F3B62730A55400B4AEF5 /* LoginViewController.swift */; };
 		1079F3BA2730AEF200B4AEF5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1079F3B92730AEF200B4AEF5 /* User.swift */; };
+		109CC0172733589600BB5849 /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109CC0162733589600BB5849 /* Cart.swift */; };
 		10A864BC272C889900384407 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A864BB272C889900384407 /* AppDelegate.swift */; };
 		10A864BE272C889900384407 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A864BD272C889900384407 /* SceneDelegate.swift */; };
 		10A864C3272C889900384407 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10A864C1272C889900384407 /* Main.storyboard */; };
@@ -34,6 +36,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		10319B852733172000C6756E /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		103291482731DEE2005EB62B /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		1032914A2731E276005EB62B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		1079F3A127304CEF00B4AEF5 /* MealCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealCell.swift; sourceTree = "<group>"; };
@@ -48,6 +51,7 @@
 		1079F3B327309A0D00B4AEF5 /* FBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBManager.swift; sourceTree = "<group>"; };
 		1079F3B62730A55400B4AEF5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1079F3B92730AEF200B4AEF5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		109CC0162733589600BB5849 /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
 		10A864B8272C889900384407 /* DeliveryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeliveryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10A864BB272C889900384407 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10A864BD272C889900384407 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +96,8 @@
 			children = (
 				1079F3B92730AEF200B4AEF5 /* User.swift */,
 				10CE87852732C4F90068D1F4 /* Restaurant.swift */,
+				10319B852733172000C6756E /* Meal.swift */,
+				109CC0162733589600BB5849 /* Cart.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -290,6 +296,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10319B862733172000C6756E /* Meal.swift in Sources */,
 				10A864D6272CA32F00384407 /* ResturantDetailsViewController.swift in Sources */,
 				1079F3AA273089CD00B4AEF5 /* CartCell.swift in Sources */,
 				1079F3B02730930F00B4AEF5 /* OrderViewController.swift in Sources */,
@@ -299,6 +306,7 @@
 				1079F3BA2730AEF200B4AEF5 /* User.swift in Sources */,
 				10A864D1272C90DB00384407 /* RestaurantsViewController.swift in Sources */,
 				1079F3AC27308F7E00B4AEF5 /* PaymentViewController.swift in Sources */,
+				109CC0172733589600BB5849 /* Cart.swift in Sources */,
 				10A864BC272C889900384407 /* AppDelegate.swift in Sources */,
 				1079F3B427309A0D00B4AEF5 /* FBManager.swift in Sources */,
 				1079F3A427305F9700B4AEF5 /* MealDetailsViewController.swift in Sources */,

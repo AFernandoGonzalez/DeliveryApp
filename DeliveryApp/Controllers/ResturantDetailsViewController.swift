@@ -4,7 +4,6 @@
 //
 //  Created by Alvaro Gonzalez on 10/29/21.
 //
-
 import UIKit
 import AlamofireImage
 
@@ -12,12 +11,9 @@ class ResturantDetailsViewController: UIViewController, UITableViewDelegate, UIT
     
     
     //Variable availble in the lifetime of the screen
-   
-    
     @IBOutlet weak var tableView: UITableView!
     
     var meals = [[String:Any]]()
-    
     var restaurant: [String:Any]!
 
     override func viewDidLoad() {
@@ -36,29 +32,17 @@ class ResturantDetailsViewController: UIViewController, UITableViewDelegate, UIT
                     print(error.localizedDescription)
              } else if let data = data {
                  let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String:Any]
-                 
                  self.meals = dataDictionary["meals"] as! [[String:Any]]
-                 
                  self.tableView.reloadData()
-                 
-                 
                  //download is complete : reload table view data
                  self.tableView.reloadData()
-                 
                  print(dataDictionary)
-
-                    // TODO: Get the array of movies
-                    // TODO: Store the movies in a property to use elsewhere
-                    // TODO: Reload your table view data
 
              }
         }
         task.resume()
         
-        
-        //print(restaurant["name"])
 
-        // Do any additional setup after loading the view.
     }
     
     
@@ -74,12 +58,10 @@ class ResturantDetailsViewController: UIViewController, UITableViewDelegate, UIT
         let mealname = meal["name"] as! String
         let mealdescription = meal["short_description"] as! String
         //let mealprice = meal["price"] as! Int
-        
-    
+
         cell.mealNameLabel.text = mealname
         cell.mealDescriptionLabel.text = mealdescription
         //cell.mealDescriptionLabel
-        
         
         //Displaying image
         let mealPath = meal["image"] as! String
@@ -96,7 +78,6 @@ class ResturantDetailsViewController: UIViewController, UITableViewDelegate, UIT
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
        
-        
         //find selcted meal
         let cell = sender as! UITableViewCell
         let indexPath = tableView.indexPath(for: cell)!
@@ -107,6 +88,9 @@ class ResturantDetailsViewController: UIViewController, UITableViewDelegate, UIT
         //pas the selected meal to the details screen
         let detailsViewController = segue.destination as! MealDetailsViewController
         detailsViewController.meal = meal
+        
+        //just added
+        //detailsViewController.restaurant = restaurant
         
         //deselecting after click on individual meal
         tableView.deselectRow(at: indexPath, animated: true)

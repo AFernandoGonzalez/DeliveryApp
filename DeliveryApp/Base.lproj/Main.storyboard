@@ -369,7 +369,7 @@
                         <viewLayoutGuide key="safeArea" id="EIc-WY-oLJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Menu" id="3pk-78-IKv"/>
+                    <navigationItem key="navigationItem" id="3pk-78-IKv"/>
                     <connections>
                         <outlet property="tableView" destination="rav-bP-EoQ" id="Scv-GE-0RD"/>
                     </connections>
@@ -459,16 +459,19 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Add to Cart">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="22"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="addToCart:" destination="nRn-cI-NKy" eventType="touchUpInside" id="Vt5-0n-gDk"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SnT-yq-lLg">
-                                <rect key="frame" x="299" y="728" width="28" height="21"/>
+                                <rect key="frame" x="286" y="728" width="76" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F13-08-GE5">
-                                <rect key="frame" x="203" y="683" width="11" height="26"/>
+                                <rect key="frame" x="195" y="683" width="39" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                 <nil key="textColor"/>
@@ -481,6 +484,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="-">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="removeQtyMeal:" destination="nRn-cI-NKy" eventType="touchUpInside" id="zH1-uE-Dka"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s5A-c7-Z1K">
                                 <rect key="frame" x="258" y="675" width="40" height="43"/>
@@ -489,6 +495,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="+">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="addQtyMeal:" destination="nRn-cI-NKy" eventType="touchUpInside" id="aRY-iw-DS5"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="277-Re-0Op"/>
@@ -502,6 +511,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="lbQty" destination="F13-08-GE5" id="kgk-bH-bwf"/>
+                        <outlet property="lbTotal" destination="SnT-yq-lLg" id="kp2-KI-jfe"/>
                         <outlet property="mealDeatilPriceLabel" destination="IIC-32-vy7" id="H0R-dD-gVc"/>
                         <outlet property="mealDetailDescriptionLabel" destination="bxw-0v-ZyU" id="xZa-e4-pOV"/>
                         <outlet property="mealDetailName" destination="eO9-fK-P8C" id="mrq-X1-ao2"/>
